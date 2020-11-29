@@ -11,10 +11,15 @@ npm run dev
 或
 yarn dev
 
-# 生产环境
-npm run build
+# 测试环境
+npm run build:test
 或
-yarn build
+yarn build:test
+
+# 生产环境
+npm run build:online
+或
+yarn build:online
 ```
 
 
@@ -44,6 +49,7 @@ yarn build
 │  page.config.js                   // 页面配置文件
 │  README.md                        // 说明
 │  webpack.config.dev.js            // 开发环境的webpack配置文件
+|  webpack.config.test.js           // 测试环境的webpack配置文件
 │  webpack.config.prod.js           // 生产环境的webpack配置文件
 
 ```
