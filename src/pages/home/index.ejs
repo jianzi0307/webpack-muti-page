@@ -9,9 +9,7 @@
 <body>
   <!-- 不转义 -->
   <%= require('../common/header.ejs')({  title: '标题', desc: '描述' }) %>
-  <!-- 转义 -->
-  <%- require('../common/header.ejs')({  title: '标题', desc: '描述' }) %>
-  这里是主页，
+  首页
   <a href="./about.html">关于我们</a>
   <div class="test">css测试</div>
 </body>
