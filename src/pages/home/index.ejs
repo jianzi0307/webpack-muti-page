@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  <%= require('../common/header.ejs')({  title: '标题', desc: '描述' }) %>
-  首页
-  <a href="./about.html">关于我们</a>
-  <div class="test">css测试</div>
-</body>
-</html>
+  <%= require('../layout/header.ejs')({ title: '页面标题', desc: '页面描述' }) %>
+  <%= require('../layout/top.ejs')() %>
+  <div class="container">
+    <div>首页</div>
+    <a href="./about.html">关于我们</a>
+    <div class="test">css测试</div>
+    <div id="test">hi</div>
+  </div>
+  <%= require('../layout/footer.ejs')() %>

@@ -35,7 +35,8 @@ let prodWebpackConfig = {
   mode: 'production',
   // 出口
   output: {
-    path: path.join(__dirname, `.${outputDir}`)
+    path: path.join(__dirname, `.${outputDir}`),
+    publicPath: '/1/'
   },
   plugins: [
     new UglifyJsPlugin({

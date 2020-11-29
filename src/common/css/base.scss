@@ -1,3 +1,63 @@
-.test{
-  color: red;
+@import "normalize.scss";
+
+html,
+body {
+  min-width: 1200px;
+  font-size: 14px;
+}
+
+/* 容器 */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 顶部栏 */
+.top {
+  background-color: #434343;
+  &-bar {
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    &__heading {
+      float: left;
+    }
+    &__tail {
+      float: right;
+      .button {
+        float: left;
+        border-right: solid 1px #434343;
+      }
+    }
+  }
+  &-menu {
+    background-color: white;
+    height: 50px;
+  }
+  &-banner {
+    background-color: #f2f2f2;
+    height: 110px;
+    border-bottom: solid 2px #f14678;
+  }
+}
+
+.button {
+  padding: 0 20px;
+  background-color: #535353;
+  color: white;
+}
+.button.primary {
+  background-color: #e40e31 !important;
+  color: white;
+}
+
+/* 底部 */
+.footer {
+  background-color: #b1002f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  p {
+    font-size: 14px;
+  }
 }

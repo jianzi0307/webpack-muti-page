@@ -15,7 +15,7 @@ let webpackConfig = {
   output: {
     path: path.join(__dirname, './dist/'),
     filename: 'static/js/[name].[hash:5].js',
-    publicPath: ''
+    publicPath: '/'
   },
   // 路径配置
   resolve: {
@@ -50,7 +50,7 @@ let webpackConfig = {
       },
       // html中的img标签
       {
-        test: /\.html$/,
+        test: /\.(htm|html)$/i,
         loader: 'html-withimg-loader',
         include: [path.join(__dirname, './src')],
         options: {
