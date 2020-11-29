@@ -61,6 +61,3 @@ yarn build
     html: 'setting/setting.html',
     jsEntry: 'setting/setting.js'
   }
-
-- 通过pm2 deploy发布
-  - waiting...
