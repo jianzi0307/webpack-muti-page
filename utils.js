@@ -17,7 +17,7 @@ exports.pushHtmlWebpackPlugins = (webpackConfig, options = {}, outputDir = '/dis
         template,
         inject: true,
         chunks: [page.path],
-        title: page.title || '',
+        // title: page.title || '',
         inlineSource: '.(js|css)$',
         chunksSortMode: 'dependency',
         ...options

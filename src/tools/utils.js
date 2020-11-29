@@ -1,7 +1,13 @@
-/**
- * rem 相关的工具
- * @param {*}
- */
+// 获取请求参数
+export const getUrlParam = function (name) {
+  // 构造一个含有目标参数的正则表达式对象
+  var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)')
+  // 匹配目标参数
+  var r = window.location.search.substr(1).match(reg)
+  // 返回参数值
+  if (r != null) return unescape(r[2]); return null
+}
+
 export const remUtil = {
   // 调整窗口或者翻转屏幕事件
   resizeEvent: 'orientationchange' in window ? 'orientationchange' : 'resize',

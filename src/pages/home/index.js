@@ -1,4 +1,4 @@
-import '@/common/css/base.scss'
+import '@babel/polyfill'
 import './index.scss'
 import { throttle } from '@/tools/utils'
 import $ from 'jquery'
